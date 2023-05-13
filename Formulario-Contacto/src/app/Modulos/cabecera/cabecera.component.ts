@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent {
-
+  title = 'Formulario-Contacto';
 }
