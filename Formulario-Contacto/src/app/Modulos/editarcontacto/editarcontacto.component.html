@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="content">
+    <h1>EDITAR CONTACTO</h1>
+    <label for="txtCedula">Cédula:</label>
+    <input type="text" [(ngModel)]="contact.cedula" id="txtCedula" disabled class="form-control" placeholder="Cedula"/>
+    <br/>
+    <label for="txtNombre">Nombre:</label>
+    <input type="text" id="txtNombre" [(ngModel)]="contact.nombre"  class="form-control" placeholder="Nombre"/>
+    <br/>
+    <label for="txtDireccion">Dirección:</label>
+    <input type="text" id="txtDireccion" [(ngModel)]="contact.direccion"  class="form-control" placeholder="Direccion"/>
+    <br/>
+    <br/>
+    <button class="btn btn-primary" (click)="edit(contact)" [disabled]="contact.cedula.length == 0 || contact.nombre.length == 0 || contact.direccion.length == 0">EDIT</button>
+  </div>
+</div>
+
+

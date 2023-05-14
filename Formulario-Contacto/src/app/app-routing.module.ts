@@ -10,20 +10,22 @@ import { Texto1Component } from './Modulos/texto1/texto1.component';
 import { Texto2Component } from './Modulos/texto2/texto2.component';
 import { Texto3Component } from './Modulos/texto3/texto3.component';
 import { ListarcontactoComponent } from './Modulos/listarcontacto/listarcontacto.component';
+import { EditarcontactoComponent } from './Modulos/editarcontacto/editarcontacto.component';
 
 
 const routes: Routes = [
+  {path: "", redirectTo: '/paginas/listarcontacto', pathMatch: 'full'},
   {path: "paginas/cabecera", component: CabeceraComponent},
   {path: "paginas/menu", component: MenuComponent},
   {path: "paginas/piepagina", component: PiedepaginaComponent},
   {path: "paginas/crearcontacto", component: CrearcontactoComponent},
-
+  {path: "paginas/editarcontacto", component: EditarcontactoComponent},
   {path: "paginas/listarcontacto", component: ListarcontactoComponent},
 
   {path: "paginas/texto1", component: Texto1Component},
   {path: "paginas/texto2", component: Texto2Component},
 
-  {path: "paginas/texto3", component: Texto3Component}
+  {path: "paginas/texto3", component: Texto3Component},
 
 
 ];

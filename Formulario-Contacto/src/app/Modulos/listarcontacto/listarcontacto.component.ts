@@ -9,6 +9,7 @@ import { ContactoService } from 'src/app/services/contacto.service';
   styleUrls: ['./listarcontacto.component.css']
 })
 export class ListarcontactoComponent {
+
   listadoContactos: Contacto[] = []
 
   constructor(private contactoService: ContactoService,
@@ -20,15 +21,24 @@ export class ListarcontactoComponent {
   editar(contacto: Contacto){
     console.log(contacto)
     let params: NavigationExtras = {
-      queryParams: {
-        contacto: contacto,
-        nombre: 'Cristian'
-      }
+      queryParams: contacto
     }
-    this.router.navigate(['paginas/nuevo-contacto'], params)
+     /* this.router.navigate(['paginas/editarcontacto'], {
+      state: { contactoDetails: params }
+    }) */
   }
 
   eliminar(contacto: Contacto) {
+    if(window.confirm('Deseas Eliminar ?')){
+      if(this.contactoService.delete(contacto)){
+        console.log('exito');
+        this.listadoContactos = this.contactoService.getList();
+      }else{
+        console.log('no exito');
+
+      }
+    }
+
 
   }
 

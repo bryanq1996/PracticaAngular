@@ -1,7 +1,14 @@
 .content {
-  margin: auto;
   border: 2px solid red;
   width: 50% ;
 
   min-height: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  position:absolute;top:25%;left:21%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
+
+
+
 }
+

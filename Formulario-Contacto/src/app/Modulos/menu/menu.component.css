@@ -65,14 +65,14 @@ p {
   flex-direction: column;
   align-items: center; */
   margin: auto;
-  border: 2px solid red;
+  border: 2px solid rgb(11, 111, 204);
   width: 20%;
   min-height: 300px;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 16px;
   background-color: #c2c3c4;
-  position:absolute;top:30%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
+  position:absolute;top:40%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
 }
 
 svg.material-icons {

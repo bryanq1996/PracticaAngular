@@ -12,6 +12,8 @@ import { Texto1Component } from './Modulos/texto1/texto1.component';
 import { Texto2Component } from './Modulos/texto2/texto2.component';
 import { Texto3Component } from './Modulos/texto3/texto3.component';
 import { ListarcontactoComponent } from './Modulos/listarcontacto/listarcontacto.component';
+import { FormsModule } from '@angular/forms';
+import { EditarcontactoComponent } from './Modulos/editarcontacto/editarcontacto.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { ListarcontactoComponent } from './Modulos/listarcontacto/listarcontacto
     Texto1Component,
     Texto2Component,
     Texto3Component,
-    ListarcontactoComponent
+    ListarcontactoComponent,
+    EditarcontactoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

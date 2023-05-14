@@ -1,15 +1,23 @@
 
-<div class="content">
-  <label for="txtCedula">Cédula:</label>
-<!--  <input id="txtCedula" [(ngModel)]="contacto.cedula"/>
-<br/>
-<label for="txtNombre">Nombre:</label>
-<input id="txtNombre" [(ngModel)]="contacto.nombre"/>
-<br/>
-<label for="txtDireccion">Dirección:</label>
-<input id="txtDireccion" [(ngModel)]="contacto.direccion"/>
-<br/> --> <br/>
+<div class="container">
 
-<button (click)="guardar()">Guardar</button>
+  <div class="content">
+    <h1>CREAR CONTACTO</h1>
+
+      <label for="txtCedula">Cédula:</label>
+      <input type="text" id="txtCedula" [(ngModel)]="contacto.cedula" class="form-control" minlength="10" maxlength="13" placeholder="Cedula"/>
+     <br/>
+     <label for="txtNombre">Nombre:</label>
+     <input type="text" id="txtNombre" [(ngModel)]="contacto.nombre" class="form-control" placeholder="Nombre"/>
+     <br/>
+     <label for="txtDireccion">Dirección:</label>
+     <input type="text" id="txtDireccion" [(ngModel)]="contacto.direccion" class="form-control" placeholder="Direccion"/>
+     <br/>
+     <br/>
+
+     <button class="btn btn-success" (click)="guardar()" [disabled]="contacto.cedula.length == 0 || contacto.nombre.length == 0 || contacto.direccion.length == 0">SAVE</button>
+
+  </div>
 </div>
+
 

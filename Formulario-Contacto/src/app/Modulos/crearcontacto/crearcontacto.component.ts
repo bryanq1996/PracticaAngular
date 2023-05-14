@@ -9,18 +9,10 @@ import { ContactoService } from 'src/app/services/contacto.service';
   styleUrls: ['./crearcontacto.component.css']
 })
 export class CrearcontactoComponent {
+
   contacto: Contacto = new Contacto();
 
-  constructor(private contactoService: ContactoService,
-    private router: Router) {
-
-      let params = this.router.getCurrentNavigation()?.extras.queryParams;
-      if(params){
-        console.log(params)
-        this.contacto = new Contacto()
-        this.contacto = params['contacto']
-      }
-    }
+  constructor(private contactoService: ContactoService) {}
 
   guardar() {
     console.log(this.contacto)
