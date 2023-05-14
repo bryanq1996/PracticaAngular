@@ -1,12 +1,15 @@
 .content {
 
-  border: 2px solid red;
-  width: 50% ;
 
-  min-height: 100px;
+  margin: auto;
+  border: 2px solid rgb(11, 111, 204);
+  width: 20%;
+  min-height: 300px;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
-  position:absolute;top:25%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
+  margin-top: 16px;
+  background-color: #c2c3c4;
+  position:absolute;top:35%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
 
 
 

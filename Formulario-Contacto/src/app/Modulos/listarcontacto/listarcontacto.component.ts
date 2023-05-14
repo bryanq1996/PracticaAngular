@@ -23,9 +23,9 @@ export class ListarcontactoComponent {
     let params: NavigationExtras = {
       queryParams: contacto
     }
-     /* this.router.navigate(['paginas/editarcontacto'], {
+     this.router.navigate(['paginas/editarcontacto'], {
       state: { contactoDetails: params }
-    }) */
+    })
   }
 
   eliminar(contacto: Contacto) {
