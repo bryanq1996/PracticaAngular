@@ -9,6 +9,7 @@ import { ContactoService } from 'src/app/services/contacto.service';
   styleUrls: ['./editarcontacto.component.css'],
 })
 export class EditarcontactoComponent {
+
   getcontact: any;
   contact: Contacto = new Contacto();
 
@@ -17,7 +18,9 @@ export class EditarcontactoComponent {
     private route: ActivatedRoute,
     private contactoService: ContactoService
   ) {
-    this.getcontact = router.getCurrentNavigation()?.extras.state;
+
+
+     this.getcontact = router.getCurrentNavigation()?.extras.state;
     this.contact = this.getcontact.contactoDetails.queryParams;
     if (contactoService.getList().length == 0) {
       router.navigate(['paginas/listarcontacto']);

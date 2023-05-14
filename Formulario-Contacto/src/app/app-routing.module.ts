@@ -14,7 +14,7 @@ import { EditarcontactoComponent } from './Modulos/editarcontacto/editarcontacto
 
 
 const routes: Routes = [
-  {path: "", redirectTo: '/paginas/listarcontacto', pathMatch: 'full'},
+  //{path: "", redirectTo: '/paginas/texto1', pathMatch: 'full'},
   {path: "paginas/cabecera", component: CabeceraComponent},
   {path: "paginas/menu", component: MenuComponent},
   {path: "paginas/piepagina", component: PiedepaginaComponent},
@@ -26,7 +26,7 @@ const routes: Routes = [
   {path: "paginas/texto2", component: Texto2Component},
 
   {path: "paginas/texto3", component: Texto3Component},
-
+  //{path: "/editar", component: EditarcontactoComponent, outlet: "formulario"},
 
 ];
 

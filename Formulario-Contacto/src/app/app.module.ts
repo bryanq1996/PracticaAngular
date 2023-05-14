@@ -14,6 +14,8 @@ import { Texto3Component } from './Modulos/texto3/texto3.component';
 import { ListarcontactoComponent } from './Modulos/listarcontacto/listarcontacto.component';
 import { FormsModule } from '@angular/forms';
 import { EditarcontactoComponent } from './Modulos/editarcontacto/editarcontacto.component';
+import { FormularioComponent } from './Modulos/formulario/formulario.component';
+import { CentroComponent } from './Modulos/centro/centro.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { EditarcontactoComponent } from './Modulos/editarcontacto/editarcontacto
     Texto2Component,
     Texto3Component,
     ListarcontactoComponent,
-    EditarcontactoComponent
+    EditarcontactoComponent,
+    FormularioComponent,
+    CentroComponent
   ],
   imports: [
     BrowserModule,

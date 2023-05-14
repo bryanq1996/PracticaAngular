@@ -1,11 +1,12 @@
 .content {
   border: 2px solid red;
-  width: 50% ;
-
-  min-height: 300px;
+  width: 60% ;
+  min-height: 500px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 15%;
   position:absolute;top:25%;left:21%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
+
 }
+
 

@@ -1,4 +1,4 @@
-.content {
+#content {
   border: 2px solid red;
   width: 60% ;
   min-height: 500px;
@@ -8,5 +8,3 @@
   position:absolute;top:25%;left:21%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
 
 }
-
-

@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
 import { Contacto } from 'src/app/domain/contacto';
 import { ContactoService } from 'src/app/services/contacto.service';
+import { EditarcontactoComponent } from 'src/app/Modulos/editarcontacto/editarcontacto.component';
 
 @Component({
   selector: 'app-listarcontacto',
   templateUrl: './listarcontacto.component.html',
-  styleUrls: ['./listarcontacto.component.css']
+  styleUrls: ['./listarcontacto.component.css'],
+
 })
 export class ListarcontactoComponent {
 
@@ -23,9 +25,13 @@ export class ListarcontactoComponent {
     let params: NavigationExtras = {
       queryParams: contacto
     }
+
+
+
      this.router.navigate(['paginas/editarcontacto'], {
       state: { contactoDetails: params }
     })
+
   }
 
   eliminar(contacto: Contacto) {

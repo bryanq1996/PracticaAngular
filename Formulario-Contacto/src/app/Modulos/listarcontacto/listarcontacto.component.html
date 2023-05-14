@@ -1,36 +1,40 @@
 
-<div class="container">
 
-  <div class="content">
+<div class="content">
 
-    <span *ngIf="listadoContactos.length == 0">
-      No existen contactos
-    </span>
+
+  <span *ngIf="listadoContactos.length == 0">
+    No existen contactos
+  </span>
 <h1 *ngIf="listadoContactos.length != 0">LISTAR CONTACTOS</h1>
-    <table *ngIf="listadoContactos.length != 0" class="table table-success table-striped">
-      <thead>
-        <tr>
-          <th scope="col">Cedula</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Direccion</th>
-          <th scope="col">Accion</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let c of listadoContactos">
-          <td>{{c.cedula}} </td>
-          <td>{{c.nombre}} </td>
-          <td>{{c.direccion}} </td>
-          <td><button class="btn btn-primary" (click)="editar(c)">EDIT</button>
-          <br><button class="btn btn-danger" (click)="eliminar(c)">DELETE</button> </td>
-        </tr>
-      </tbody>
-    </table>
+  <table *ngIf="listadoContactos.length != 0" class="table table-success table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Cedula</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Accion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of listadoContactos">
+        <td>{{c.cedula}} </td>
+        <td>{{c.nombre}} </td>
+        <td>{{c.direccion}} </td>
+        <td>
 
-    </div>
+          <button class="btn btn-primary" (click)="editar(c)" >EDIT</button>
+        <br><button class="btn btn-danger" (click)="eliminar(c)">DELETE</button> </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
 </div>
-
-
-
-
 
